@@ -1,0 +1,20 @@
+name: InfinityAthleticSystem
+version: '1.0-SNAPSHOT'
+main: com.kaede.infinityAthleticSystem.InfinityAthleticSystem
+api-version: '1.20'
+
+commands:
+  setathletic:
+    description: "現在の座標をランダムTP先のアスレチックとして登録します"
+    usage: "/setathletic"
+    permission: "setathletic.admin"
+  randomathletictp:
+    description: "一番近くにいる人をランダムなアスレチックに手レポートします、コマンドブロックでのみ実行可能"
+    usage: "/randomathletictp"
+    permission: "randomathletictp.admin"
+
+permissions:
+  setathletic.admin:
+    default: true
+  randomathletictp.admin:
+    default: true
